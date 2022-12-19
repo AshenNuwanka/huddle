@@ -1,0 +1,25 @@
+
+.div1{
+    background-image: url("./resources/images/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.trybtn{
+    border-radius: 15px;
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 1px 1px;
+}
+.gsffbtn{
+    background-color: #f359d7;
+    border-radius: 25px;
+    color: white;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    border: none;
+}
