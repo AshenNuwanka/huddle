@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCSportSpot</title>
+    <link rel="icon" href="assets/images/logos/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="container-fluid mb-5">
+        <div class="row shadow-sm">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center">
+                        <img src="assets/images/logos/logo.png" class="uimglogo" alt="">
+                    </div>
+                    <div class="col-10">
+                        <div class="row">
+                            <div class="col-6 p-4">
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                </form>
+                            </div>
+                            <div class="col-4">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-2">
+                <div class="row">
+                    <div class="col-12 border border-1 border-top-0 border-bottom-0 p-4">
+                        <div class="row p-3">
+                            <a href="adminDashboard.php" class="text-start btn btn text-secondary fw-bold"><i class="bi bi-columns-gap"></i> &nbsp; Dashboard</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-secondary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneVendor" aria-expanded="false" aria-controls="flush-collapseOneVendor">
+                                                <i class="bi bi-people text-secondary"></i> &nbsp; Vendors
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOneVendor" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <a href="vendorList.php" class="text-start btn btn text-secondary">Vendors List</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed text-secondary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseUser" aria-expanded="false" aria-controls="panelsStayOpen-collapseUser">
+                                            <i class="bi bi-people text-secondary"></i> &nbsp; Users
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseUser" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <a href="userList.php" class="text-start btn btn text-secondary">Users List</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed text-secondary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneCat" aria-expanded="false" aria-controls="flush-collapseOneCat">
+                                                    <i class="bi bi-hdd-stack"></i> &nbsp; Categories
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOneCat" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <div class="row">
+                                                        <button class="text-start btn btn text-secondary">Categories List</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-secondary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseProduct" aria-expanded="false" aria-controls="panelsStayOpen-collapseProduct">
+                                                <i class="bi bi-columns"></i> &nbsp; Products
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseProduct" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <a href="addProduct.php" class="text-start btn btn text-secondary">Add Products</a>
+                                                </div>
+                                                <div class="row">
+                                                    <button class="text-start btn btn text-secondary">Products List</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed text-secondary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOneoders" aria-expanded="false" aria-controls="flush-collapseOneoders">
+                                                    <i class="bi bi-cart-fill"></i> &nbsp; Orders
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOneoders" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <div class="row d-flex justify-content-start">
+                                                        <button class=" text-start btn btn text-secondary">New Order</button>
+                                                    </div>
+                                                    <div class="row d-flex justify-content-start">
+                                                        <button class=" text-start btn btn text-secondary">Order Histry</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mx-3 offset-lg-1 col-10 pt-1">
+                            <div class="row">
+                                <button class="text-start text-secondary btn w-100 fw-bold"><i class="bi bi-star-half"></i> &nbsp;Reviews</button>
+                            </div>
+                        </div>
+                        <div class="mx-3 offset-lg-1 col-10 pt-1">
+                            <div class="row">
+                                <button class="text-start text-secondary btn w-100 fw-bold"><i class="bi bi-card-list"></i> &nbsp;Brands</button>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                        </div>
+                        <div class="col-12">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- majaor section -->
+            <div class="col-12 col-lg-10">
+
+            </div>
+        </div>
+    </div>
+    <?php
+    include "footer.php";
+    ?>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
